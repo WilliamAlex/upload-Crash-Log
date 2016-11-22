@@ -15,6 +15,7 @@
 		E9E331441D254A100066FE64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E331421D254A100066FE64 /* LaunchScreen.storyboard */; };
 		E9E3314F1D254A100066FE64 /* LogTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3314E1D254A100066FE64 /* LogTextTests.m */; };
 		E9E3315A1D254A100066FE64 /* LogTextUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E331591D254A100066FE64 /* LogTextUITests.m */; };
+		E9E3316C1D254A1F0066FE64 /* XZLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E331691D254A1F0066FE64 /* XZLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		E9E331551D254A100066FE64 /* LogTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E331591D254A100066FE64 /* LogTextUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogTextUITests.m; sourceTree = "<group>"; };
 		E9E3315B1D254A100066FE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E331681D254A1F0066FE64 /* XZLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLog.h; sourceTree = "<group>"; };
+		E9E331691D254A1F0066FE64 /* XZLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		E9E331331D254A100066FE64 /* LogText */ = {
 			isa = PBXGroup;
 			children = (
+				E9E331671D254A1F0066FE64 /* XZLog */,
 				E9E331371D254A100066FE64 /* AppDelegate.h */,
 				E9E331381D254A100066FE64 /* AppDelegate.m */,
 				E9E3313A1D254A100066FE64 /* ViewController.h */,
@@ -138,6 +142,16 @@
 				E9E3315B1D254A100066FE64 /* Info.plist */,
 			);
 			path = LogTextUITests;
+			sourceTree = "<group>";
+		};
+		E9E331671D254A1F0066FE64 /* XZLog */ = {
+			isa = PBXGroup;
+			children = (
+				E9E331681D254A1F0066FE64 /* XZLog.h */,
+				E9E331691D254A1F0066FE64 /* XZLog.m */,
+			);
+			name = XZLog;
+			path = CATLog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +221,8 @@
 				TargetAttributes = {
 					E9E331301D254A100066FE64 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = FWFC33HSQ3;
+						ProvisioningStyle = Manual;
 					};
 					E9E331491D254A100066FE64 = {
 						CreatedOnToolsVersion = 7.3;
@@ -271,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E3313C1D254A100066FE64 /* ViewController.m in Sources */,
+				E9E3316C1D254A1F0066FE64 /* XZLog.m in Sources */,
 				E9E331391D254A100066FE64 /* AppDelegate.m in Sources */,
 				E9E331361D254A100066FE64 /* main.m in Sources */,
 			);
@@ -415,10 +432,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FWFC33HSQ3;
 				INFOPLIST_FILE = LogText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fenda.LogText;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danpeng.qinghua;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ec516901-708d-403e-a258-cd201a73ca57";
+				PROVISIONING_PROFILE_SPECIFIER = qinghuaDevelopment;
 			};
 			name = Debug;
 		};
@@ -426,10 +447,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FWFC33HSQ3;
 				INFOPLIST_FILE = LogText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fenda.LogText;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danpeng.qinghua;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ec516901-708d-403e-a258-cd201a73ca57";
+				PROVISIONING_PROFILE_SPECIFIER = qinghuaDevelopment;
 			};
 			name = Release;
 		};
@@ -498,6 +523,7 @@
 				E9E331601D254A100066FE64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9E331611D254A100066FE64 /* Build configuration list for PBXNativeTarget "LogTextTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +532,7 @@
 				E9E331631D254A100066FE64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9E331641D254A100066FE64 /* Build configuration list for PBXNativeTarget "LogTextUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +541,7 @@
 				E9E331661D254A100066FE64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
